@@ -12,6 +12,20 @@ print(x)
 
 # VALIDATE THE USER INPUT
 
+#if x == "rock": # "paper" "scissors"
+#    print("VALID")
+#else:
+#    print("OOPS, INVALID, PLEASE TRY AGAIN")
+#    exit()
+
+if (x == "rock") or (x == "paper") or (x == "scissors"):
+    print("VALID")
+else:
+    print("OOPS, INVALID, PLEASE TRY AGAIN")
+    exit()
+
+print("LATER MESSAGES")
+
 # GENERATE A COMPUTER CHOICE
 
 
