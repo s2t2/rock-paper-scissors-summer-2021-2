@@ -14,6 +14,10 @@ print("Rock, Paper, Scissors, Shoot!")
 x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 print(x)
 
+x = x.lower()
+print(x)
+
+
 # VALIDATE THE USER INPUT
 
 #if x == "rock": # "paper" "scissors"
