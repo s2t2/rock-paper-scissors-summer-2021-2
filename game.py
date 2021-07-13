@@ -2,9 +2,9 @@
 
 import random
 import os
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-#load_dotenv() #> loads contents of the .env file into the script's environment
+load_dotenv() #> loads contents of the .env file into the script's environment
 
 z = os.getenv("USER_NAME")
 
@@ -13,7 +13,7 @@ print(z) # reads the variable from the environment
 
 
 
-exit()
+#exit()
 
 
 
