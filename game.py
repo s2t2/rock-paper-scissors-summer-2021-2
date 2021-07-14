@@ -45,7 +45,7 @@ print("COMPUTER CHOSE:", computer_choice)
 # DETERMINE THE WINNER
 #
 
-winners = {
+WINNERS = {
     "rock": {
         "rock": None,
         "paper": "paper",
@@ -63,7 +63,7 @@ winners = {
     }
 }
 
-winner = winners[user_choice][computer_choice]
+winner = WINNERS[user_choice][computer_choice]
 
 if winner == user_choice:
     print("YOU WON!")
