@@ -80,17 +80,45 @@ print("COMPUTER CHOSE:", c)
 #print("COMPUTER WON")
 
 # shared by Andrew via Slack
-if x == c:
-    print("It's a tie, try again")
-elif x == "rock" and c == "paper":
-    print ("You Lose! Play again")
-elif x ==  "rock" and c == "scissors":
-    print ("You win! Yay!")
-elif x == "paper" and c == "rock":
-    print ("you win! Yay!")
-elif x == "paper" and c == "scissors":
-    print ("You lose! Better luck next time.")
-elif x == "scissors" and c == "rock":
-    print ("You lose! Sorry!")
-elif x == "scissors" and c == "paper":
-    print ("You win! Yay!")
+# if x == c:
+#     print("It's a tie, try again")
+# elif x == "rock" and c == "paper":
+#     print ("You Lose! Play again")
+# elif x ==  "rock" and c == "scissors":
+#     print ("You win! Yay!")
+# elif x == "paper" and c == "rock":
+#     print ("you win! Yay!")
+# elif x == "paper" and c == "scissors":
+#     print ("You lose! Better luck next time.")
+# elif x == "scissors" and c == "rock":
+#     print ("You lose! Sorry!")
+# elif x == "scissors" and c == "paper":
+#     print ("You win! Yay!")
+
+# alternative dictionary-based approach!!!
+
+winners = {
+    "rock": {
+        "rock": None,
+        "paper": "paper",
+        "scissors": "rock",
+    },
+    "paper": {
+        "rock": "paper",
+        "paper": None,
+        "scissors": "scissors",
+    },
+    "scissors": {
+        "rock": "rock",
+        "paper": "scissors",
+        "scissors": None,
+    }
+}
+
+winner = winners[x][c]
+if winner == x:
+    print("YOU WON!")
+elif winner == c:
+    print("YOU LOST")
+else:
+    print("TIE")
